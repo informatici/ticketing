@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>.::.::. rodenic's sjbjl .::.::.</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+	<script type="text/javascript"> 
+//		var sjbjl_path = "../sjbjl";
+//		var sjbjl_user_device = 'mobile'; // mobile|desktop
+//		var sjbjl_decimal_separator = '.'; // .|,
+//		var sjbjl_pureajax = true; // true|false
+//		var sjbjl_errorbgcolor = '#FF8B00';
+//		var language_code = 'en'; // it|en|de
+//		var sjbjl_uploadifyerror = [];
+//		sjbjl_uploadifyerror.push('');
+	</script>
+
+	<link type="text/css" href="../css/ui-themes/sjbjlness/jquery.ui.custom.css" rel="stylesheet" />	<!-- sjbjlness, lightness, cupertino -->
+	<link type="text/css" href="../css/sjbjl.general.css" rel="stylesheet" />
+
+	<script type="text/javascript" src="../scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="../scripts/jquery.ui.js"></script>
+
+	<script type="text/javascript" src="../scripts/jquery.maskedinput.min.js"></script>
+	<script type="text/javascript" src="../scripts/jquery.uploadify.min.js"></script>
+	<script type="text/javascript" src="../scripts/jquery.autocomplete.min.js"></script>
+	<script type="text/javascript" src="../scripts/jquery.nyromodal.js"></script>
+
+	<script type="text/javascript" src="../scripts/sjbjl.sortabletable.js"></script>
+	<script type="text/javascript" src="../scripts/sjbjl.swfobject.js"></script>
+	<script type="text/javascript" src="../scripts/sjbjl.core.js"></script>
+	<script type="text/javascript" src="../scripts/sjbjl.icolorpicker.js"></script>
+	<script type="text/javascript" src="../scripts/sjbjl.modaldialog.js"></script>
+
+	<!-- PNG FIX for IE6 -->
+	<!-- http://24ways.org/2007/supersleight-transparent-png-in-ie6 -->
+	<!--[if lte IE 6]>
+		<script type="text/javascript" src="../scripts/pngfix/supersleight-min.js"></script>
+	<![endif]-->
+
+<!-- sjbjl include:end -->
+
+	<link type="text/css" href="../css/sjbjl.docs.css" rel="stylesheet"/>
+
+	<script type="text/javascript">
+
+	$(document).ready(function() {
+
+		$("#campoditest_1,#campoditest_2").autocomplete('field_autocomplete_legacy_response.html', {
+			minChars:2,
+			max:999,
+			autoFill:false,
+			width:400,
+			scrollHeight: 220,
+			multiple:true,
+			formatItem:function(row,i,total) {
+							var return_string = "";
+							for (i=0; i<row.length; i++) {
+								field = row[i].split(':');
+								field_name = field[0];
+								field_value = field[1];
+								return_string = return_string + " " + field[1];
+							}
+							return return_string;
+						}
+		});
+
+		$("#campoditest_1,#campoditest_2").result(function(event, data, formatted) {
+			for (i=0; i<data.length; i++) {
+				field = data[i].split(':');
+				field_name = field[0];
+				field_value = field[1];
+				$('#' + field[0]).val(field[1]);
+			}
+		});
+
+	});
+
+	</script>
+	
+</head>
+
+<body>
+
+<div id="docs_container">
+
+<img src="../images/sjbjl.png" alt="sjbjl logo" width="150" />
+
+<h2><span class="sjbjl_color">s</span>mart <span class="sjbjl_color">j</span>Query <span class="sjbjl_color">b</span>ased <span class="sjbjl_color">j</span>avascript <span class="sjbjl_color">l</span>ibrary</h2>
+<h5>by rodenic</h5>
+
+<h5><a href="index.html" title="sjbjl index">&lt;-- sjbjl's docs index</a></h5>
+
+<hr />
+
+<h3>field autocomplete</h3>
+
+<label>campoditest_1:</label>
+<input type="text" name="campoditest_1" id="campoditest_1" />
+<br /><br />
+
+<label>campoditest_2:</label>
+<input type="text" name="campoditest_2" id="campoditest_2" />
+<br /><br />
+
+<label>campoditest_3:</label>
+<input type="text" name="campoditest_3" id="campoditest_3" />
+
+<hr />
+
+<h4>javascript</h4>
+
+<div class="source">
+$("#campoditest_1,#campoditest_2").autocomplete('field_autocomplete_legacy_response.html', {
+	minChars:2,
+	max:999,
+	autoFill:false,
+	width:400,
+	scrollHeight: 220,
+	multiple:true,
+	formatItem:function(row,i,total) {
+				var return_string = "";
+				for (i=0; i&lt;row.length; i++) {
+					field = row[i].split(':');
+					field_name = field[0];
+					field_value = field[1];
+					return_string = return_string + " " + field[1];
+				}
+				return return_string;
+			}
+});
+	</script>
+</div>
+
+	<hr />
+
+	<h4>html sample</h4>
+	
+	<div class="source">
+...
+	</div>
+
+</div>
+
+</body>
+
+</html>

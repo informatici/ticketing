@@ -1,0 +1,605 @@
+/* Reset generale */
+
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	background-color:#f2f5ff;
+}
+
+form {
+	float:left;
+}
+
+a {
+	color:#000000;
+}
+
+a.email {
+	text-decoration:underline;
+}
+
+/* Versione */
+
+div#version {
+	position:fixed;
+	bottom:0;
+	left:0;
+	font-size:10px;
+	margin-left:3px;
+}
+
+/* Body */
+
+body.home {
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+	text-align:center;
+	background-image:url(../images/homebackground.png);
+	background-position:center center;
+	background-attachment:fixed;
+	background-repeat:repeat-x;
+	overflow:hidden;
+}
+
+body.play {
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+
+body.main {
+	background-color:#f2f5ff;
+	background-image:url(../images/mainlogo.gif);
+	background-position:center center;
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+}
+
+/* Sezione Home */
+
+div#homecontainer {
+	position:absolute;
+	width:890px;
+	height:508px;
+	top:50%;
+	left:50%;
+	margin:-325px auto auto -445px;
+	text-align:left;
+}
+
+div#hometop {
+	width:890px;
+	height:254px;
+	background-color:#f0f0f0;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-image:url(../images/hometoplogo.png);
+	background-position:bottom center;
+	background-repeat:no-repeat;
+}
+
+div#homelogin {
+	width:890px;
+	height:58px;
+}
+
+div#homelogin fieldset {
+	float:left;
+	width:100%;
+	height:59px;
+	border:0 none;
+	margin:0;
+	padding:0;
+}
+
+div#homelogin fieldset input.text {
+	float:left;
+	
+	width:160px;
+	height:22px;
+	
+	font-size:14px;
+	
+	margin:17px 16px auto auto;
+	padding:2px 0 0 0;
+	
+	text-indent:2px;
+}
+
+div#homelogin fieldset label {
+	float:left;
+	
+	width:auto;
+	height:22px;
+	
+	font-size:14px;
+	
+	margin:17px 6px auto auto;
+	padding:4px 0 0 0;
+	
+	text-indent:2px;
+}
+
+/* Form ed elementi */
+
+input.generalbutton  {
+
+	float:left;
+
+	width:80px;
+	height:26px;
+
+	margin:17px 8px auto auto;
+
+	border:0 none;
+
+	background-image:url(../images/generalbutton.jpg);
+	background-position:center center;
+	background-repeat:repeat-x;
+
+}
+
+input#submit,
+input#reset {
+	cursor:pointer;
+}
+
+/* Main DIVS */
+
+div#container {
+	width:100%;
+	min-height:600px;
+	
+	text-align:center;
+	
+}
+
+div#content {
+	width:990px;
+	min-height:400px;
+	
+	margin:35px auto auto auto;
+	
+	text-align:left;
+}
+
+/* Fieldsets */
+
+div#fieldsetcontainer {
+	width:700px;
+	min-height:200px;
+	overflow:hidden;
+	font-size:10px;
+	margin:0 auto;
+}
+
+div#fieldsetcontainer fieldset {
+	margin-top:15px;
+	margin-bottom:15px;
+	border:0 none;
+}
+
+div#fieldsetcontainer fieldset legend {
+	display:none;
+}
+
+div#fieldsetcontainer fieldset input {
+	border:1px solid #b0b0b0;
+}
+
+div#fieldsetcontainer fieldset label {
+	height:14px;
+	text-align:left;
+	font-family:Verdana,Arial,helvetica,sans-serif;
+	font-size:10px;
+}
+
+div#fieldset_inner_container fieldset {
+	float:left;
+	width:300px;
+	min-height:230px;
+	margin:0 13px 20px 13px;
+	padding:0 0 5px 0;
+	border:1px dotted #b0b0b0;
+}
+
+div#fieldsetcontainer fieldset.fieldset_inner_container {
+	float:left;
+	width:auto;
+	margin:10px 0 10px 0;
+	padding:0 0 5px 0;
+	border:1px dotted #b0b0b0;
+}
+
+div#fieldset_inner_container fieldset legend,
+div#fieldsetcontainer fieldset.fieldset_inner_container legend {
+	display:block;
+	float:left;
+	margin:auto auto 5px 5px;
+	padding-top:0;
+	padding-right:8px;
+	padding-bottom:4px;
+	padding-left:8px;
+	border:1px dotted #b0b0b0;
+}
+
+div#fieldset_inner_container fieldset legend input,
+div#fieldsetcontainer fieldset.fieldset_inner_container legend input {
+	clear:left;
+	float:left;
+	margin:1px auto auto auto;
+}
+
+div#fieldset_inner_container fieldset legend label,
+div#fieldsetcontainer fieldset.fieldset_inner_container legend label {
+	float:left;
+	max-width:230px;
+	margin:3px auto auto auto;
+}
+
+div#fieldset_inner_container fieldset input {
+	float:left;
+	clear:left;
+	height:20px;
+	margin:0 3px 3px 10px;
+	padding:0;
+	border:0 none;
+}
+
+div#fieldset_inner_container fieldset label {
+	float:left;
+	width:250px;
+	height:18px;
+	margin:2px auto 3px auto;
+}
+
+div.fieldsetrow,
+div.enable,
+div.userabil,
+div.dueabil,
+div.duenorma,
+div.unonorma
+{
+	float:left;
+	clear:left;
+	width:665px;
+	height:auto;
+	margin:8px auto 8px 10px;
+}
+
+div.treabil {
+	margin:8px auto 8px 10px;
+}
+
+div.dueabil {
+	margin:8px auto 8px 10px;
+}
+
+div.enable	.uno	{clear:left;	float:left;	width:10px;									}
+div.enable 	.due	{				float:left;	width:100px; margin-top:3px; 				}
+
+div.dueabil	.uno	{clear:left;	float:left;	width:auto; margin:auto;}
+div.dueabil 	.due	{				float:left;	width:140px; margin:auto auto auto 5px;}
+div.dueabil 	.tre	{				float:left;	width:auto; margin:auto auto auto 60px;}
+div.dueabil 	.quattro{				float:left;	width:140px; margin:auto auto auto 5px;}
+
+div.treabil	.uno	{clear:left;	float:left;	width:120px;								}
+div.treabil 	.due	{				float:left;	width:20px;					border:0 none;}
+div.treabil 	.tre	{				float:left;	width:130px;	margin:auto auto auto 50px;	}
+div.treabil 	.quattro{				float:left;	width:20px;									}
+div.treabil	.cinque	{				float:left;	width:130px;	margin:auto auto auto 50px;	}
+div.treabil	.sei	{				float:left;	width:20px;									}
+
+div.duenorma textarea 	{border:1px solid #c0c0c0; height:60px;}
+
+div.duenorma .uno		{clear:left;	float:left; width:90px;									}
+div.duenorma .due		{				float:left; width:210px;								}
+div.duenorma .tre		{				float:left; width:90px;	margin:auto auto auto 20px;		}
+div.duenorma .quattro	{				float:left; width:210px;								}
+
+div.unonorma .uno		{clear:left;	float:left; width:90px;									}
+div.unonorma .due		{				float:left; width:210px;								 text-align:left;}
+
+h4.spacer {
+	float:left;
+	width:660px;
+	height:16px;
+	
+	margin:20px auto 12px 10px;
+	
+	background-image:url(../images/spacer_background.gif);
+	background-position:left center;
+	background-repeat:no-repeat;
+}
+
+h4.spacer span {
+	display:block;
+	border-right:10px solid #ffffff;
+	float:left;
+	padding-right:5px;
+	font-size:11px;
+	line-height:14px;
+	background-color:#ffffff;
+}
+
+/* Vari */
+caption {
+	text-align:left;
+	font-size:12px;
+}
+
+a.credits {
+	float:right;
+	width:178px;
+	height:31px;
+	margin:15px auto auto auto;
+	
+	background-image:url(../images/credits.gif);
+	background-position:center center;
+	background-repeat:repeat-x;
+}
+
+/* Area messaggi */
+
+div#messagearea {
+	
+	width:100%;
+	height:60px;
+	
+	margin:60px 0 auto 0;
+	
+	background-image:url(../images/messagearea_background.jpg);
+	background-repeat:repeat-x;
+}
+
+div#messageareacontent {
+	width:990px;
+	height:60px;
+	
+	margin:0 auto;
+	
+	text-align:left;
+}
+
+div#messageareacontent span#menusezione,
+div#messageareacontent span#menufunzione {
+	display:block;
+	float:left;
+	width:auto;
+	height:60px;
+
+	font-size:22px;
+	line-height:60px;
+	
+}
+
+div#messageareacontent span#menusezione {
+	color:#000000;
+}
+
+div#messageareacontent span#menufunzione {
+	color:#5d89ff;
+}
+
+div#messageareacontent div#operationarea {
+	float:right;
+}
+
+div#messageareacontent div#operationarea input {
+	
+	float:left;
+	
+	width:80px;
+	height:26px;
+	
+	margin:17px 8px auto auto;
+	
+	border:0 none;
+	
+	background-image:url(../images/generalbutton.jpg);
+	background-position:center center;
+	background-repeat:repeat-x;
+	
+}
+
+/* ICONS */
+a.icon_webconf {
+	float:left;
+	display:block;
+	width:19px;
+	height:19px;
+	margin:auto 3px auto 3px;
+	cursor:pointer;
+	background-position:center center;
+	background-repeat:no-repeat;
+	text-decoration:none;
+}
+
+a.icon_webconf span {
+	display:none;
+}
+
+a.icon_webconf {background-image:url(../images/icon_webcam.png);}
+
+
+/* Tabella */
+
+table.commonlist caption {
+	font-size:11px;
+}
+
+table.commonlist {
+	width:100%;
+	border:0 none;
+}
+
+table.commonlist thead tr th:first-child {
+	text-align:right;
+	background-image:url(../images/tableheader_left.jpg);
+}
+
+table.commonlist thead tr {
+	background-image:url(../images/tableheader_central.jpg);
+}
+
+table.commonlist thead tr th:last-child {
+	background-image:url(../images/tableheader_right.jpg);
+}
+
+table.commonlist tbody tr {
+	background-color:#d5e0fe;
+}
+
+table.commonlist tbody tr:hover {
+	background-color:#a4bbfe;
+}
+
+table.commonlist tbody tr th {
+	text-align:right;
+	background-color:#a4bbfe;
+	padding-right:6px;
+}
+
+table.commonlist tr th,
+table.commonlist tr td {
+	font-size:12px;
+	height:32px;
+	border:0 none;
+	text-align:center;
+	border-bottom:1px solid #f2f5ff;
+}
+
+table.commonlist tbody tr th {
+	max-width:300px;
+}
+
+div#container0 {
+	float:left;
+
+	width:250px;
+	height:250px;
+
+	margin:auto auto auto 15px;
+	border:1px dotted #f98102;
+	overflow:hidden;
+
+	background-image:url(../images/lpc_background.gif);
+	background-color:#000000;
+}
+
+/* UPLOADIFY */
+#fileQueue {
+	float:left;
+	width:260px;
+	height:80px;
+	overflow:auto;
+	border:1px solid #E5E5E5;
+	margin:auto auto auto 10px;
+}
+
+#fileQueueCommands {
+	float:left;
+	width:120px;
+	margin:auto auto auto 16px;
+}
+
+.uploadifyQueueItem {
+	width:225px;
+	margin-top:5px;
+	margin-left:5px;
+	padding:10px;
+	font:normal 11px Verdana,Geneva,sans-serif;
+	border:1px solid #E5E5E5;
+	background-color:#F5F5F5;
+}
+.uploadifyError {
+	border:2px solid #FBCBBC !important;
+	background-color:#FDE5DD !important;
+}
+.uploadifyQueueItem .cancel {
+	float:right;
+}
+.uploadifyProgress {
+	background-color:#FFFFFF;
+	border-top:1px solid #808080;
+	border-left:1px solid #808080;
+	border-right:1px solid #C5C5C5;
+	border-bottom:1px solid #C5C5C5;
+	margin-top:10px;
+	width:100%;
+}
+.uploadifyProgressBar {
+	background-color:#0099FF;
+	width:1px;
+	height:3px;
+}
+
+div#foto_preview {
+	float:left;
+	width:214px;
+	height:80px;
+	margin:auto auto auto 10px;	
+	border:1px solid #c5c5c5;
+	text-align:center;
+}
+
+img.list_foto {
+	width:auto;
+	height:24px;
+	margin:auto auto auto 10px;	
+}
+
+img.detail_foto {
+	border:1px solid #d0d0d0;
+	width:auto;
+	height:auto;
+	margin:auto auto auto 0;	
+}
+
+img.ui-datepicker-trigger {
+	margin-right:80px;
+}
+
+/* DETAIL */
+
+.detail_pop_content {
+	width:600px;
+}
+
+.detail_pop_content table {
+	width:600px;
+}
+
+.detailname {
+	width:15%;
+	white-space:nowrap;
+}
+
+.detailvalue {
+	width:35%;
+}
+
+div.operation_cell {
+	float:right;
+	margin:10px auto auto auto;
+}
+
+a.button_prev,
+a.button_succ {
+	display:block;
+	float:left;
+	width:80px;
+	height:20px;
+	line-height:20px;
+	text-align:center;
+	margin:5px;
+	background-color:#f0f0f0;
+	border:1px solid #666666;
+}

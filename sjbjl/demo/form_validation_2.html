@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="iso-8859-1" ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>.::.::. rodenic's sjbjl .::.::.</title> 
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<!-- sjbjl include:start -->
+
+	<script type="text/javascript"> 
+//		var sjbjl_path = "../sjbjl";
+//		var sjbjl_user_device = 'mobile'; // mobile|desktop
+//		var sjbjl_decimal_separator = '.'; // .|,
+//		var sjbjl_pureajax = true; // true|false
+//		var sjbjl_errorbgcolor = '#FF8B00';
+//		var language_code = 'en'; // it|en|de
+//		var sjbjl_uploadifyerror = [];
+//		sjbjl_uploadifyerror.push('');
+	</script>
+
+	<link type="text/css" href="../css/ui-themes/sjbjlness/jquery.ui.custom.css" rel="stylesheet" />	<!-- sjbjlness, lightness, cupertino -->
+	<link type="text/css" href="../css/sjbjl.general.css" rel="stylesheet" />
+
+	<script type="text/javascript" src="../scripts/jquery.new.min.js"></script>
+	<script type="text/javascript" src="../scripts/jquery.ui.js"></script>
+
+	<script type="text/javascript" src="../scripts/jquery.maskedinput.min.js"></script>
+	<script type="text/javascript" src="../scripts/jquery.uploadify.min.js"></script>
+	<script type="text/javascript" src="../scripts/jquery.autocomplete.min.js"></script>
+	<script type="text/javascript" src="../scripts/jquery.nyromodal.js"></script>
+
+	<script type="text/javascript" src="../scripts/sjbjl.sortabletable.js"></script>
+	<script type="text/javascript" src="../scripts/sjbjl.swfobject.js"></script>
+	<script type="text/javascript" src="../scripts/sjbjl.core.js"></script>
+	<script type="text/javascript" src="../scripts/sjbjl.icolorpicker.js"></script>
+	<script type="text/javascript" src="../scripts/sjbjl.modaldialog.js"></script>
+
+	<!-- PNG FIX for IE6 -->
+	<!-- http://24ways.org/2007/supersleight-transparent-png-in-ie6 -->
+	<!--[if lte IE 6]>
+		<script type="text/javascript" src="../scripts/pngfix/supersleight-min.js"></script>
+	<![endif]-->
+
+<!-- sjbjl include:end -->
+
+	<link type="text/css" href="../css/sjbjl.docs.css" rel="stylesheet"/>
+	
+</head>
+
+<body>
+
+<div id="docs_container">
+
+<img src="../images/sjbjl.png" alt="sjbjl logo" width="150" />
+
+<h2><span class="sjbjl_color">s</span>mart <span class="sjbjl_color">j</span>Query <span class="sjbjl_color">b</span>ased <span class="sjbjl_color">j</span>avascript <span class="sjbjl_color">l</span>ibrary</h2>
+<h5>by rodenic</h5>
+
+<h5><a href="index.html" title="sjbjl index">&lt;-- sjbjl's docs index</a></h5>
+
+<hr />
+
+<h3>form validation</h3>
+
+<form action="form_ok.html" name="testform" id="testform" method="post" class="sjbjl_form">
+	<fieldset>
+		<legend>valuetype</legend>
+
+		<label for="iban_italia">iban_italia</label>
+		<input type="text" name="iban_italia" id="iban_italia" value="" onkeypress="sjbjl_checkfield(this,event,'mandatory=true,valuetype=iban_italia,label=iban italia');" />
+		<span class="source">IT-80-W-12345-12345-123451234512</span><br /><br />
+
+		<label for="url">url</label>
+		<input type="text" name="url" id="url" value="" onkeypress="sjbjl_checkfield(this,event,'mandatory=true,valuetype=url,label=url');" /><br /><br />
+
+		<label for="url">ipv4</label>
+		<input type="text" name="ipv4" id="ipv4" value="" onkeypress="sjbjl_checkfield(this,event,'mandatory=true,valuetype=ipv4,label=ipv4');" /><br /><br />
+
+		<label for="ipv6">ipv6</label>
+		<input type="text" name="ipv6" id="ipv6" value="" onkeypress="sjbjl_checkfield(this,event,'mandatory=true,valuetype=ipv6,label=ipv6');" /><br /><br />
+
+		<label for="mac">mac</label>
+		<input type="text" name="mac" id="mac" value="" onkeypress="sjbjl_checkfield(this,event,'mandatory=true,valuetype=mac,label=mac');" /><br /><br />
+
+		<label for="email">email</label>
+		<input type="text" name="email" id="email" value="" onkeypress="sjbjl_checkfield(this,event,'mandatory=true,valuetype=email,label=email');" /><br /><br />
+
+		<label for="iban">iban</label>
+		<input type="text" name="iban" id="iban" value="" onkeypress="sjbjl_checkfield(this,event,'mandatory=true,valuetype=iban,label=iban');" /><br /><br />
+
+		<label for="bei">bei</label>
+		<input type="text" name="bei" id="bei" value="" onkeypress="sjbjl_checkfield(this,event,'mandatory=true,valuetype=bei,label=bei');" /><br /><br />
+
+		<label for="bic">bic</label>
+		<input type="text" name="bic" id="bic" value="" onkeypress="sjbjl_checkfield(this,event,'mandatory=true,valuetype=bic,label=bic');" /><br /><br />
+
+		<label for="ibei">ibei</label>
+		<input type="text" name="ibei" id="ibei" value="" onkeypress="sjbjl_checkfield(this,event,'mandatory=true,valuetype=ibei,label=ibei');" /><br /><br />
+
+		<label for="uschu">uschu</label>
+		<input type="text" name="uschu" id="uschu" value="" onkeypress="sjbjl_checkfield(this,event,'mandatory=true,valuetype=uschu,label=uschu');" /><br /><br />
+
+		<label for="cuc">cuc</label>
+		<input type="text" name="cuc" id="cuc" value="" onkeypress="sjbjl_checkfield(this,event,'mandatory=true,valuetype=cuc,label=cuc');" /><br /><br />
+
+		<label for="nt35">nt35</label>
+		<input type="text" name="nt35" id="nt35" value="" onkeypress="sjbjl_checkfield(this,event,'mandatory=true,valuetype=nt35,label=nt35');" /><br /><br />
+
+		<input type="submit" name="submit" id="submit" class="sjbjl_submit" value="login" />
+	</fieldset>
+</form>
+
+</div>
+
+</body>
+
+</html>

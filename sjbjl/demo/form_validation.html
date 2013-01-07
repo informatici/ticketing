@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="iso-8859-1" ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>.::.::. rodenic's sjbjl .::.::.</title> 
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<!-- sjbjl include:start --> 
+
+	<script type="text/javascript"> 
+//		var sjbjl_path = "../sjbjl";
+//		var sjbjl_user_device = 'mobile'; // mobile|desktop
+//		var sjbjl_decimal_separator = '.'; // .|,
+//		var sjbjl_pureajax = true; // true|false
+//		var sjbjl_errorbgcolor = '#FF8B00';
+//		var language_code = 'en'; // it|en|de
+//		var sjbjl_uploadifyerror = [];
+//		sjbjl_uploadifyerror.push('');
+	</script>
+
+	<link type="text/css" href="../css/ui-themes/sjbjlness/jquery.ui.custom.css" rel="stylesheet" />	<!-- sjbjlness, lightness, cupertino -->
+	<link type="text/css" href="../css/sjbjl.general.css" rel="stylesheet" />
+
+	<script type="text/javascript" src="../scripts/jquery.new.min.js"></script>
+	<script type="text/javascript" src="../scripts/jquery.ui.js"></script>
+
+	<script type="text/javascript" src="../scripts/jquery.maskedinput.min.js"></script>
+	<script type="text/javascript" src="../scripts/jquery.uploadify.min.js"></script>
+	<script type="text/javascript" src="../scripts/jquery.autocomplete.min.js"></script>
+	<script type="text/javascript" src="../scripts/jquery.nyromodal.js"></script>
+
+	<script type="text/javascript" src="../scripts/sjbjl.sortabletable.js"></script>
+	<script type="text/javascript" src="../scripts/sjbjl.swfobject.js"></script>
+	<script type="text/javascript" src="../scripts/sjbjl.core.js"></script>
+	<script type="text/javascript" src="../scripts/sjbjl.icolorpicker.js"></script>
+	<script type="text/javascript" src="../scripts/sjbjl.modaldialog.js"></script>
+
+	<!-- PNG FIX for IE6 -->
+	<!-- http://24ways.org/2007/supersleight-transparent-png-in-ie6  -->
+	<!--[if lte IE 6]>
+		<script type="text/javascript" src="../scripts/pngfix/supersleight-min.js"></script>
+	<![endif]-->
+
+<!-- sjbjl include:end -->
+
+	<link type="text/css" href="../css/sjbjl.docs.css" rel="stylesheet"/>
+
+</head>
+
+<body>
+
+<div id="docs_container">
+
+<img src="../images/sjbjl.png" alt="sjbjl logo" width="150" />
+
+<h2><span class="sjbjl_color">s</span>mart <span class="sjbjl_color">j</span>Query <span class="sjbjl_color">b</span>ased <span class="sjbjl_color">j</span>avascript <span class="sjbjl_color">l</span>ibrary</h2>
+<h5>by rodenic</h5>
+
+<h5><a href="index.html" title="sjbjl index">&lt;-- sjbjl's docs index</a></h5>
+
+<hr />
+
+<h3>form validation</h3>
+
+<form action="form_ok.html" name="testform" id="testform" method="post" class="sjbjl_form">
+	<fieldset>
+		<legend>valuetype</legend>
+
+		<label for="test">Select di test:</label><br />
+		<select name="testselect" id="testselect" onkeypress="sjbjl_checkfield(this,event,'mandatory=true,label=select di test');">
+			<option value="">---</option>
+			<option value="voce1">Voce 1</option>
+			<option value="voce2">Voce 2</option>
+			<option value="voce3">Voce 3</option>
+		</select><br /><br />
+
+		<label for="email">Radio: </label><br /> 
+		<input type="radio" name="radiotest" id="radiotest0" value="0" />
+		<input type="radio" name="radiotest" id="radiotest1" value="1" />
+		<input type="radio" name="radiotest" id="radiotest2" value="2" /><br /><br />
+
+		<label for="username">Username:</label><br />
+		<input type="text" name="username" id="username" class="" value="" onkeypress="sjbjl_checkfield(this,event,'maxl=10,minl=6,mandatory=true,valuetype=username,label=username');" /><br /><br />
+		
+		<label for="password">Password:</label><br />
+		<input type="password" name="password" id="password" value="" onkeypress="sjbjl_checkfield(this,event,'minl=6,maxl=6,mandatory=true,valuetype=password,label=password');" /><br /><br />
+
+		<label for="email">e-mail:</label><br />
+		<input type="text" name="email" id="email" value="" onkeypress="sjbjl_checkfield(this,event,'minl=6,mandatory=true,valuetype=email,label=e-mail');" /><br /><br />		
+
+		<label for="username">Sex:</label><br />
+		<input type="text" name="sex" id="sex" class="" value="" onkeypress="sjbjl_checkfield(this,event,'mandatory=true,valuetype=sex,label=Sesso');" /><br /><br />
+
+		<label for="email">Checkbox:</label><br />
+		<input type="checkbox" name="checktest" id="checktest" value="1" onkeypress="sjbjl_checkfield(this,event,'mandatory=true,label=checktest');" /><br /><br />		
+
+		<label for="testdate">Date:</label><br />
+		<input type="text" name="testdate" id="testdate" value="" onkeypress="sjbjl_checkfield(this,event,'mandatory=true,valuetype=date,label=testdate');" /><br /><br />
+
+		<label for="testdate">Birthdate:</label><br />
+		<input type="text" name="birthdate" id="birthdate" value="" onkeypress="sjbjl_checkfield(this,event,'mandatory=true,valuetype=birthdate,label=birthdate');" /><br /><br />
+
+		<label for="testtime">Time:</label><br />
+		<input type="text" name="testtime" id="testtime" value="" onkeypress="sjbjl_checkfield(this,event,'mandatory=true,valuetype=time,label=testtime');" /><br /><br />
+
+		<label for="testcolor">Color:</label><br />
+		<input type="text" name="testcolor" id="testcolor" value="" class="iColorPicker" /><br /><br />
+
+		<label for="testtime">Money:</label><br />
+		<input type="text" name="testmoney" id="testmoney" value="" onkeypress="sjbjl_checkfield(this,event,'minval=20,maxval=300,multipleof=15,mandatory=true,valuetype=money,label=testmoney');" /><br /><br />
+
+		<label for="textareatest">Textarea:</label><br />
+		<textarea rows="2" cols="20" name="textareatest" id="textareatest" onkeypress="sjbjl_checkfield(this,event,'minl=6,maxl=32,mandatory=true,label=textareatest');"></textarea><br /><br />
+
+		<input type="button" class="sjbjl_button" style="clear:left;" name="setmtory" id="setmtory" value="set username as OPTIONAL" onclick="setmandatory('radiotest0','mandatory');" />
+
+		<input type="button" class="sjbjl_button" style="clear:left;" name="setmalength" id="setmalength" value="set username's MAXLENGTH to 5" onclick="setmaxlength('username',5);" />
+
+		<input type="button" class="sjbjl_button" name="setmilength" id="setmilength" value="set username's MINLENGTH to 3" onclick="setminlength('username',3);" />
+
+		<input type="button" class="sjbjl_button" name="setvtype" id="setvtype" value="set username's VALUETYPE to money" onclick="setvaluetype('username','money');" />
+		
+		<br /><br />
+
+		<input type="submit" name="submit" id="submit" class="sjbjl_submit" value="login" />
+
+	</fieldset>
+</form>
+
+<hr />
+
+<h4>javascript</h4>
+
+<div class="source">
+&lt;input ... onkeypress="sjbjl_checkfield(object,event,'minl=nn,maxl=mm,mandatory=true,valuetype=tipodidato,label=etichetta');" /&gt;
+</div>
+
+<hr />
+
+<h4>html sample</h4>
+<div class="source">
+&lt;form action="login.php" name="loginform" id="loginform" method="post" onsubmit="return checkform(this.id);"&gt;
+	&lt;fieldset&gt;
+		&lt;input type="text" name="username" id="username" class="text" onkeypress="sjbjl_checkfield(this,event,'minl=6,maxl=24,mandatory=true,valuetype=alfanum,label=username');" /&gt;
+		&lt;input type="password" name="password" id="password" class="text" onkeypress="sjbjl_checkfield(this,event,'minl=6,maxl=24,'mandatory=true,valuetype=password,label=password');" /&gt;
+		&lt;input type="submit" name="submit" id="submit" value="login" /&gt;
+	&lt;/fieldset&gt;
+&lt;/form&gt;
+</div>
+
+</div>
+
+</body>
+
+</html>

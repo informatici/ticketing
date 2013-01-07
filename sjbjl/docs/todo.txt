@@ -1,0 +1,5 @@
+- migliorare contrasto campi obbligatori
+- permettere inserimento virgola nella label di sjbjl
+- formato data internazionale configurabile
+- valuetype per carta di credito
+- aggiornare sjbjl quickref

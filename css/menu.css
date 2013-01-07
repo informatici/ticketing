@@ -1,0 +1,215 @@
+div.clearfix:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+
+div.clearfix {
+	display:inline-block;
+}
+
+/* Hides from IE-mac \*/
+* html div.clearfix {
+	height:1%;
+}
+
+div.clearfix {
+	display:block;
+}
+
+/* End hide from IE-mac */
+div.clearfix {height:1%;}
+div.clearfix {display:block;}
+
+/* menucontainer Tab/button */
+div.menutab {
+  	background:url(../images/menutab_b.png) repeat-x 0 0;
+	height:42px;
+	position:relative;
+    top:0;
+    z-index:999;
+	border-top:1px solid #fff2d6;	
+}
+
+div.menutab ul.menutogglecontainer {
+	display:block;
+	position:relative;
+  	float:right;
+  	clear:right;
+  	height:42px;
+	width:auto;
+  	font-weight:bold;
+	line-height:42px;
+	margin:0;
+	right:150px;
+  	color:white;
+  	font-size:80%;
+	text-align:center;
+}
+
+div.menutab ul.menutogglecontainer li.left {
+  	background:url(../images/menutab_l.png) no-repeat left 0;
+  	height:42px;
+	width:37px;
+	padding:0;
+	margin:0;
+  	display:block;
+	float:left;
+}
+
+div.menutab ul.menutogglecontainer li.right {
+  	background:url(../images/menutab_r.png) no-repeat left 0;
+  	height:42px;
+	width:30px;
+	padding:0;
+	margin:0;
+  	display:block;
+	float:left;
+}
+
+div.menutab ul.menutogglecontainer li {
+ 	text-align:left;
+  	padding:0 6px 0 0;
+	margin:0;
+	display:block;
+	float:left;
+	height:42px;
+  	background:url(../images/menutab_m.png) repeat-x 0 0;
+}
+
+div.menutab ul.menutogglecontainer li a {
+	color:#FFFFFF;
+}
+
+div.menutab ul.menutogglecontainer li a:hover {
+	color:white;
+}
+
+div.menutab .sep {color:#414141}
+
+div.menutab a.open,
+div.menutab a.close {
+	height:20px;
+	line-height:20px !important;
+	padding-left:5px !important;
+	cursor:pointer;
+	display:block;
+	width:auto;
+	position:relative;
+	top:11px;
+}
+
+/* sliding menucontainer */
+div#topmenu {
+    position:absolute;   /*menucontainer will overlap  content */
+    /*position:relative;*/   /*menucontainer will "push" the content down */
+    top:0;
+    width:100%;
+    z-index:999;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+div#menucontainer {
+	display:none;
+	position:relative;
+	width:100%;
+	height:188px;
+	
+	overflow:hidden;
+	
+	background-color:#4f7fff;
+	background-image:url(../images/menu_background.png);
+	background-repeat:repeat-x;
+	
+	color:#000000;
+	z-index:3;
+}
+
+div#menucontainer ul.mainmenu {
+	width:990px;
+	height:187px;
+	margin:0 auto 0 auto;
+	padding:0;
+	list-style-type:none;
+}
+
+div#menucontainer ul.mainmenu li.mainsubmenu {
+	float:left;
+	width:194px;
+	height:187px;
+	
+	margin-right:1px;
+	border-left:1px solid #fff2d6;
+	background-position:top left;
+}
+
+div#menucontainer ul.mainmenu li.submenu1 {
+	background-color:#b3c6ff;
+}
+
+div#menucontainer ul.mainmenu li.submenu2 {
+	background-color:#a6bdff;
+}
+
+div#menucontainer ul.mainmenu li.submenu3 {
+	background-color:#91adff;
+}
+
+div#menucontainer ul.mainmenu li.submenu4 {
+	background-color:#89a8ff;
+}
+
+div#menucontainer ul.mainmenu li.submenu5 {
+	border-right:1px solid #fff2d6;
+	background-image:url(../images/submenu5_background.png);
+}
+
+div#menucontainer ul.mainmenu li.mainsubmenu div {
+	float:left;
+	width:100%;
+	height:30px;
+
+	overflow:hidden;
+
+	text-align:left;
+	text-indent:6px;
+	
+	line-height:30px;
+	
+	font-size:17px;
+	font-weight:bold;
+	border-bottom:1px dotted #a3c1d3;
+}
+
+div#menucontainer ul.mainmenu li.mainsubmenu ul {
+	float:left;
+	width:100%;
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+
+div#menucontainer ul.mainmenu li.mainsubmenu ul li {
+	width:100%;
+	height:25px;
+	margin:0;
+	text-align:left;
+	text-indent:25px;
+	font-size:12px;
+	border-bottom:1px dotted #ffffff;
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+}
+
+div#menucontainer ul.mainmenu li.mainsubmenu ul li:hover {
+	background-color:#6b94ff;
+}
+
+div#menucontainer ul.mainmenu li.mainsubmenu ul li a {
+	display:block;
+	height:25px;
+	line-height:22px;	
+}

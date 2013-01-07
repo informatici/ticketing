@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>.::.::. rodenic's sjbjl .::.::.</title> 
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<!-- sjbjl include:start -->
+
+	<script type="text/javascript"> 
+//		var sjbjl_path = "../sjbjl";
+//		var sjbjl_user_device = 'mobile'; // mobile|desktop
+//		var sjbjl_decimal_separator = '.'; // .|,
+//		var sjbjl_pureajax = true; // true|false
+//		var sjbjl_errorbgcolor = '#FF8B00';
+//		var language_code = 'en'; // it|en|de
+//		var sjbjl_uploadifyerror = [];
+//		sjbjl_uploadifyerror.push('');
+	</script>
+
+	<link type="text/css" href="../css/ui-themes/sjbjlness/jquery.ui.custom.css" rel="stylesheet" />	<!-- sjbjlness, lightness, cupertino -->
+	<link type="text/css" href="../css/sjbjl.general.css" rel="stylesheet" />
+
+	<script type="text/javascript" src="../scripts/jquery.new.min.js"></script>
+	<script type="text/javascript" src="../scripts/jquery.ui.js"></script>
+
+	<script type="text/javascript" src="../scripts/jquery.maskedinput.min.js"></script>
+	<script type="text/javascript" src="../scripts/jquery.uploadify.min.js"></script>
+	<script type="text/javascript" src="../scripts/jquery.autocomplete.min.js"></script>
+	<script type="text/javascript" src="../scripts/jquery.nyromodal.js"></script>
+
+	<script type="text/javascript" src="../scripts/sjbjl.sortabletable.js"></script>
+	<script type="text/javascript" src="../scripts/sjbjl.swfobject.js"></script>
+	<script type="text/javascript" src="../scripts/sjbjl.core.js"></script>
+	<script type="text/javascript" src="../scripts/sjbjl.icolorpicker.js"></script>
+	<script type="text/javascript" src="../scripts/sjbjl.modaldialog.js"></script>
+
+	<!-- PNG FIX for IE6 -->
+	<!-- http://24ways.org/2007/supersleight-transparent-png-in-ie6 -->
+	<!--[if lte IE 6]>
+		<script type="text/javascript" src="../scripts/pngfix/supersleight-min.js"></script>
+	<![endif]-->
+
+<!-- sjbjl include:end -->
+
+	<link type="text/css" href="../css/sjbjl.docs.css" rel="stylesheet"/>
+	
+	<script type="text/javascript">
+		var sjbjl_onlyedited = true;
+	</script>
+
+</head>
+
+<body>
+
+<div id="docs_container">
+
+<img src="../images/sjbjl.png" alt="sjbjl logo" width="150" />
+
+<h2><span class="sjbjl_color">s</span>mart <span class="sjbjl_color">j</span>Query <span class="sjbjl_color">b</span>ased <span class="sjbjl_color">j</span>avascript <span class="sjbjl_color">l</span>ibrary</h2>
+<h5>by rodenic</h5>
+
+<h5><a href="index.html" title="sjbjl index">&lt;-- sjbjl's docs index</a></h5>
+
+<hr />
+
+<h3>form validation [3] using sjbjl_onlyedited</h3>
+
+<form action="form_ok.html" name="testform" id="testform" method="post" class="sjbjl_form">
+	<fieldset>
+		<legend>valuetype</legend>
+
+		<label for="test">Select di test:</label><br />
+		<select name="testselect" id="testselect" onkeypress="sjbjl_checkfield(this,event,'mandatory=false,label=select di test');">
+			<option value="">---</option>
+			<option value="voce1">Voce 1</option>
+			<option value="voce2">Voce 2</option>
+			<option value="voce3">Voce 3</option>
+		</select><br /><br />
+
+		<label for="email">Radio: </label><br />
+		<input type="radio" name="radiotest" id="radiotest0" value="0" />
+		<input type="radio" name="radiotest" id="radiotest1" value="1" />
+		<input type="radio" name="radiotest" id="radiotest2" value="2" /><br /><br />
+
+		
+		<label for="money">nome:</label><br />
+		<input type="text" name="nome" id="nome" value="" onkeypress="sjbjl_checkfield(this,event,'mandatory=true,valuetype=nome,label=nome');" /><br /><br />
+
+		<label for="money">trettre:</label><br />
+		<input type="text" name="trettre" id="trettre" value="" onkeypress="sjbjl_checkfield(this,event,'valuetype=trettre,label=trettre');" /><br /><br />
+
+		<label for="money">quattro:</label><br />
+		<input type="text" name="quattro" id="quattro" value="" onkeypress="sjbjl_checkfield(this,event,'valuetype=quattro,label=quattro');" /><br /><br />
+
+		<input type="hidden" name="nascosto" id="nascosto" value="" /><br /><br />
+
+		<input type="submit" name="submit" id="submit" class="sjbjl_submit" value="login" />
+	</fieldset>
+</form>
+
+</div>
+
+</body>
+
+</html>
